@@ -12,14 +12,15 @@ sources:
   type: clone
   branch: master
   cache_path: C:\Users\User\Desktop\Repositório - GitHub\poo-dd-cd-bloco-c-CarlaSamyra\myrep\.tko\cache\poo\Readme.md
-  cache_timestamp: '2025-11-10 15:38:25'
+  cache_timestamp: '2025-11-11 15:50:59'
   filters:
   - listas
 expanded:
 - poo@campanha-principal
 - poo@bloco_c-listas
 tasks:
-  poo@budega: '{rate:70}'
+  poo@budega: '{rate:100}'
+  poo@pula-pula: '{rate:70}'
 flags:
   quests: 0
   tracks: 0
@@ -27,4 +28,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@budega
+selected: poo@pula-pula
