@@ -1,0 +1,8 @@
+2025-11-16 12:58:24, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-16 12:58:28, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:100
+2025-11-16 12:58:32, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-16 23:51:51, MOVE, v:1, k:poo@cinema, mode:PICK
+2025-11-16 23:51:55, EXEC, v:1, k:poo@cinema, mode:FULL, rate:0, size:6
+2025-11-16 23:52:49, EXEC, v:1, k:poo@cinema, mode:FREE, size:6
+2025-11-16 23:57:10, EXEC, v:1, k:poo@cinema, mode:FULL, rate:11, size:21
+2025-11-16 23:57:13, EXEC, v:1, k:poo@cinema, mode:FULL, rate:11

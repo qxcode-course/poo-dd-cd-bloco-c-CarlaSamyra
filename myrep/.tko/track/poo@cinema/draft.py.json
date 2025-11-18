@@ -2,8 +2,208 @@
     "patches": [
         {
             "label": "2025-11-11_14-07-33",
-            "content": "",
+            "content": "@@ -1,141 +0,0 @@\n-class Theater:%0A    def __init__ (self, capacidade: int):%0A        self.capacidade = capacidade%0A    %0A    def __str__ (self):%0A        return f%22%22\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-11-16_23-51-55",
+            "content": "@@ -80,10 +80,18 @@\n e = \n-%5B%5D\n+capacidade\n %0A   \n@@ -137,22 +137,5 @@\n n f%22\n-%7Bself.capacidade%7D\n %22\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-16_23-52-49",
+            "content": "@@ -147,320 +147,4 @@\n de%7D%22\n-%0A    %0Adef main():%0A    sala = Theater(0)%0A    while True:%0A        line = input()%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        print (%22$%22 + line)%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(sala)%0A        else:%0A            print(%22fail: comando inv%C3%A1lido%22)%0A%0Amain()\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-16_23-57-10",
+            "content": "@@ -153,91 +153,8 @@\n    %0A\n-    def iniciar (self, iniciar: int):%0A        self.capacidade.append(iniciar)%0A    %0A\n def \n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-11-17_00-05-34",
+            "content": "@@ -481,109 +481,8 @@\n la)%0A\n-        elif args%5B0%5D == %22init%22:%0A            iniciar = int(args%5B1%5D)%0A            sala.iniciar(iniciar)%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-17_00-06-27",
+            "content": "@@ -222,14 +222,8 @@\n end(\n-%22-%22 * \n inic\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-11-17_00-10-38",
+            "content": "@@ -222,13 +222,11 @@\n end(\n-%5B\n %22-%22\n-%5D\n  * i\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-11-17_00-21-21",
+            "content": "@@ -112,96 +112,8 @@\n f):%0A\n-        capacidade = %22, %22.join(%5B%22-%22 if x is None else str(x) for x in self.capacidade%5D)%0A\n     \n@@ -218,16 +218,24 @@\n .append(\n+%5B%22-%22%5D * \n iniciar)\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-11-17_00-23-43",
+            "content": "@@ -214,16 +214,21 @@\n turn f%22%7B\n+self.\n capacida\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-11-17_00-23-54",
+            "content": "@@ -200,45 +200,8 @@\n e%5D)%0A\n-        capacidade = self.capacidade%0A\n     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-11-17_00-24-24",
+            "content": "@@ -269,16 +269,99 @@\n %7D%22%0A    %0A\n+    def iniciar (self, iniciar: int):%0A        self.capacidade.append(iniciar)%0A    %0A\n def main\n@@ -645,35 +645,63 @@\n     \n-sala = Theater(int(args%5B1%5D)\n+iniciar = int(args%5B1%5D)%0A            sala.iniciar(iniciar\n )%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-11-17_00-26-14",
+            "content": "@@ -196,16 +196,53 @@\n idade%5D)%0A\n+        capacidade = self.capacidade%0A\n         \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-11-17_00-26-30",
+            "content": "@@ -108,37 +108,32 @@\n (self):%0A        \n-self.\n capacidade = %22, \n@@ -214,21 +214,16 @@\n turn f%22%7B\n-self.\n capacida\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-17_00-26-48",
+            "content": "@@ -120,9 +120,8 @@\n     \n-#\n self\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-17_00-27-00",
+            "content": "@@ -1,83 +1,4 @@\n-class Cliente:%0A    def __init__ (self, nome: str):%0A        self.nome = nome %0A%0A%0A\n clas\n@@ -77,113 +77,13 @@\n dade\n-: list%5BCliente %7C None%5D = %5B%5D%0A        for i in range (capacidade):%0A            self.capacidade.append(None)\n+ = %5B%5D\n %0A   \n@@ -108,32 +108,33 @@\n (self):%0A        \n+#\n self.capacidade \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-17_00-29-22",
+            "content": "@@ -299,9 +299,8 @@\n     \n-#\n self\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-11-17_00-29-56",
+            "content": "@@ -252,19 +252,20 @@\n .append(\n-%22-%22\n+None\n )%0A    %0A \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-11-17_00-30-27",
+            "content": "@@ -71,16 +71,17 @@\n  nome %0A%0A\n+%0A\n class Th\n@@ -252,20 +252,19 @@\n .append(\n-None\n+%22-%22\n )%0A    %0A \n@@ -294,16 +294,22 @@\n         \n+#self.\n capacida\n@@ -398,16 +398,21 @@\n turn f%22%7B\n+self.\n capacida\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-11-17_00-32-02",
+            "content": "@@ -290,70 +290,8 @@\n f):%0A\n-        if len(self.capacidade) == 0:%0A            return %22%5B%5D%22%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-11-17_00-33-08",
+            "content": "@@ -370,16 +370,17 @@\n dade = %22\n+,\n  %22.join(\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-11-17_00-33-25",
+            "content": "@@ -452,17 +452,16 @@\n eturn f%22\n-%5B\n %7Bcapacid\n@@ -464,17 +464,16 @@\n acidade%7D\n-%5D\n %22%0A    %0Ad\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-11-17_00-33-55",
+            "content": "@@ -36,30 +36,17 @@\n lf, \n-id\n+nome\n : str\n-, telefone: int\n ):%0A \n@@ -61,130 +61,20 @@\n elf.\n-__id = id %0A        self.__telefone = telefone%0A    %0A    def __str__ (self):%0A        return f%22%7Bself.__id%7D:%7Bself.__telefone%7D%22\n+nome = nome \n %0A%0Acl\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-11-17_15-35-45",
+            "content": "@@ -125,320 +125,8 @@\n    %0A\n-    def get_phone (self):%0A        return self.__telefone%0A    %0A    def get_id (self):%0A        return self.__id%0A    %0A    def set_phone (self, phone: int):%0A        self.__telefone = phone %0A        return self.__telefone%0A    %0A    def set_id (self, nome: str):%0A        self.__id = nome %0A        return self.__id%0A    %0A\n     \n@@ -137,32 +137,32 @@\n __str__ (self):%0A\n+\n         return f\n@@ -600,94 +600,8 @@\n    %0A\n-    def entrar (self, cliente: Cliente):%0A        self.capacidade.append(cliente)%0A    %0A\n def \n@@ -873,16 +873,16 @@\n %22init%22:%0A\n+\n         \n@@ -918,181 +918,8 @@\n %5D))%0A\n-        elif args%5B0%5D == %22reserve%22:%0A            id = args%5B1%5D%0A            telefone = int(args%5B2%5D)%0A            cliente = Cliente(id, telefone)%0A            sala.arrive(cliente)%0A\n     \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-11-17_16-07-31",
+            "content": "@@ -1469,22 +1469,22 @@\n    sala.\n-entrar\n+arrive\n (cliente\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-17_16-07-59",
+            "content": "@@ -950,40 +950,10 @@\n ente\n-, index: int):%0A        if index \n+):\n %0A   \n@@ -1456,36 +1456,8 @@\n ne)%0A\n-            index = args%5B3%5D%0A\n     \n@@ -1487,15 +1487,8 @@\n ente\n-, index\n )%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-17_16-26-01",
+            "content": "@@ -953,32 +953,50 @@\n e, index: int):%0A\n+        if index %0A\n         self.cap\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-17_16-26-13",
+            "content": "@@ -588,23 +588,36 @@\n cidade: \n+list%5B\n Cliente\n+ %7C None%5D\n  = %5B%5D%0A  \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-17_16-27-01",
+            "content": "@@ -592,28 +592,15 @@\n de: \n-list%5B\n Cliente\n- %7C None%5D\n  = %5B\n@@ -982,25 +982,17 @@\n pend\n-%5Bindex%5D = \n+(\n cliente\n+)\n %0A   \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-17_16-29-52",
+            "content": "@@ -984,16 +984,23 @@\n pacidade\n+.append\n %5Bindex%5D \n@@ -1013,48 +1013,8 @@\n nte%0A\n-        self.capacidade.append(cliente)%0A\n     \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-17_16-30-09",
+            "content": "@@ -988,20 +988,15 @@\n dade\n-(int\n %5Bindex%5D\n-)\n  = c\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-17_16-30-37",
+            "content": "@@ -988,15 +988,20 @@\n dade\n+(int\n %5Bindex%5D\n+)\n  = c\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-17_16-30-52",
+            "content": "@@ -953,32 +953,73 @@\n e, index: int):%0A\n+        self.capacidade%5Bindex%5D = cliente%0A\n         self.cap\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-17_16-30-59",
+            "content": "@@ -618,45 +618,8 @@\n  %5B%5D%0A\n-        self.seats = self.capacidade%0A\n     \n@@ -916,23 +916,22 @@\n     def \n-reserve\n+entrar\n  (self, \n@@ -965,136 +965,8 @@\n t):%0A\n-        if index %3C 0 or index %3E= len(self.capacidade):%0A            print(%22fail: numero maior que permitido%22)%0A            return%0A\n     \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-17_16-39-43",
+            "content": "@@ -1675,23 +1675,22 @@\n    sala.\n-reserve\n+entrar\n (cliente\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-17_16-39-59",
+            "content": "@@ -1154,25 +1154,24 @@\n dade\n-%5Bindex%5D = \n+.append(\n cliente\n+)\n %0A   \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-17_16-41-04",
+            "content": "@@ -991,32 +991,160 @@\n e, index: int):%0A\n+        if index %3C 0 or index %3E= len(self.capacidade):%0A            print(%22fail: numero maior que permitido%22)%0A            return%0A\n         self.cap\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-17_16-41-14",
+            "content": "@@ -1026,24 +1026,25 @@\n dade\n-.append(\n+%5Bindex%5D = \n cliente\n-)\n %0A   \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-17_16-48-56",
+            "content": "@@ -576,21 +576,26 @@\n    self.\n-seats\n+capacidade\n : list%5BC\n@@ -614,16 +614,53 @@\n e%5D = %5B%5D%0A\n+        self.seats = self.capacidade%0A\n         \n@@ -697,37 +697,42 @@\n            self.\n-seats\n+capacidade\n .append(None)%0A  \n@@ -778,21 +778,26 @@\n en(self.\n-seats\n+capacidade\n ) == 0:%0A\n@@ -894,21 +894,26 @@\n in self.\n-seats\n+capacidade\n %5D)%0A     \n@@ -1012,21 +1012,26 @@\n    self.\n-seats\n+capacidade\n .append(\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-17_16-54-10",
+            "content": "@@ -946,116 +946,8 @@\n t):%0A\n-        if self.seats%5Bindex%5D != None:%0A            print(%22fail: cadeira ja esta ocupada%22)%0A            return%0A\n     \n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-17_16-55-27",
+            "content": "@@ -307,16 +307,47 @@\n  phone %0A\n+        return self.__telefone%0A\n     %0A   \n@@ -403,16 +403,41 @@\n = nome %0A\n+        return self.__id%0A\n     %0A   \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-18_15-52-22",
+            "content": "class Cliente:\n    def __init__ (self, id: str, telefone: int):\n        self.__id = id \n        self.__telefone = telefone\n    \n    def get_phone (self):\n        return self.__telefone\n    \n    def get_id (self):\n        return self.__id\n    \n    def set_phone (self, phone: int):\n        self.__telefone = phone \n    \n    def set_id (self, nome: str):\n        self.__id = nome \n    \n    def __str__ (self):\n        return f\"{self.__id}:{self.__telefone}\"\n\nclass Theater:\n    def __init__ (self, capacidade: int):\n        self.seats: list[Cliente | None] = []\n        for i in range (capacidade):\n            self.seats.append(None)\n    \n    def __str__ (self):\n        if len(self.seats) == 0:\n            return \"[]\"\n        capacidade = \" \".join([\"-\" if x is None else str(x) for x in self.seats])\n        return f\"[{capacidade}]\"\n    \n    def reserve (self, cliente: Cliente, index: int):\n        if self.seats[index] != None:\n            print(\"fail: cadeira ja esta ocupada\")\n            return\n        self.seats.append(cliente)\n    \ndef main():\n    sala = Theater(0)\n    while True:\n        line = input()\n        args: list[str] = line.split(\" \")\n        print (\"$\" + line)\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(sala)\n        elif args[0] == \"init\":\n            sala = Theater(int(args[1]))\n        elif args[0] == \"reserve\":\n            id = args[1]\n            telefone = int(args[2])\n            cliente = Cliente(id, telefone)\n            index = args[3]\n            sala.reserve(cliente, index)\n        else:\n            print(\"fail: comando inv\u00e1lido\")\n\nmain()",
+            "lines": "60"
         }
     ]
 }
