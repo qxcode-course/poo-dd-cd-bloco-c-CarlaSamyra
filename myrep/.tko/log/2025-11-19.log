@@ -1,0 +1,31 @@
+2025-11-19 00:27:33, MOVE, v:1, k:poo@cinema, mode:PICK
+2025-11-19 00:27:36, EXEC, v:1, k:poo@cinema, mode:FULL, rate:55, size:76
+2025-11-19 00:30:11, EXEC, v:1, k:poo@cinema, mode:FULL, rate:55, size:76
+2025-11-19 00:30:46, EXEC, v:1, k:poo@cinema, mode:FULL, rate:33, size:76
+2025-11-19 00:33:44, EXEC, v:1, k:poo@cinema, mode:FULL, rate:33, size:76
+2025-11-19 00:34:10, EXEC, v:1, k:poo@cinema, mode:FULL, rate:33, size:76
+2025-11-19 00:34:52, EXEC, v:1, k:poo@cinema, mode:FULL, rate:55, size:76
+2025-11-19 00:36:17, EXEC, v:1, k:poo@cinema, mode:FULL, rate:55, size:77
+2025-11-19 00:36:37, EXEC, v:1, k:poo@cinema, mode:FULL, rate:33, size:77
+2025-11-19 00:36:46, EXEC, v:1, k:poo@cinema, mode:FULL, rate:55, size:77
+2025-11-19 00:39:03, EXEC, v:1, k:poo@cinema, mode:FULL, rate:55, size:77
+2025-11-19 00:39:48, EXEC, v:1, k:poo@cinema, mode:FULL, rate:55, size:77
+2025-11-19 00:40:04, EXEC, v:1, k:poo@cinema, mode:FULL, rate:66, size:78
+2025-11-19 00:40:18, EXEC, v:1, k:poo@cinema, mode:FULL, rate:55, size:78
+2025-11-19 00:40:23, EXEC, v:1, k:poo@cinema, mode:FULL, rate:66, size:78
+2025-11-19 00:40:28, MOVE, v:1, k:poo@cinema, mode:BACK
+2025-11-19 00:40:38, MOVE, v:1, k:poo@cinema, mode:PICK
+2025-11-19 00:40:41, EXEC, v:1, k:poo@cinema, mode:FULL, rate:66
+2025-11-19 00:41:01, EXEC, v:1, k:poo@cinema, mode:FULL, rate:66, size:78
+2025-11-19 00:41:10, EXEC, v:1, k:poo@cinema, mode:FULL, rate:77, size:78
+2025-11-19 00:45:41, EXEC, v:1, k:poo@cinema, mode:FULL, rate:0, size:89
+2025-11-19 00:46:00, EXEC, v:1, k:poo@cinema, mode:FULL, rate:0, size:89
+2025-11-19 00:46:12, EXEC, v:1, k:poo@cinema, mode:FULL, rate:77, size:87
+2025-11-19 00:46:34, EXEC, v:1, k:poo@cinema, mode:FULL, rate:77, size:87
+2025-11-19 00:50:35, EXEC, v:1, k:poo@cinema, mode:FULL, rate:77, size:87
+2025-11-19 00:53:32, EXEC, v:1, k:poo@cinema, mode:FULL, rate:77, size:89
+2025-11-19 00:55:32, EXEC, v:1, k:poo@cinema, mode:FULL, rate:77, size:89
+2025-11-19 00:55:52, EXEC, v:1, k:poo@cinema, mode:FULL, rate:0, size:89
+2025-11-19 00:56:02, EXEC, v:1, k:poo@cinema, mode:FULL, rate:77, size:89
+2025-11-19 00:56:48, EXEC, v:1, k:poo@cinema, mode:FULL, rate:100, size:89
+2025-11-19 00:56:50, MOVE, v:1, k:poo@cinema, mode:BACK

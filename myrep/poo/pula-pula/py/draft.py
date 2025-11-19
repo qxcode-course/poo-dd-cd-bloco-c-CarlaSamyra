@@ -48,11 +48,11 @@ class Trampolim:
     def remove (self, nome: str):
         for i, criança in enumerate(self.espera):
             if criança.get_name() == nome:
-                self.espera.pop(i)
+                self.espera.remove(criança)
                 return
         for i, criança in enumerate(self.brincando):
             if criança.get_name() == nome:
-                self.brincando.pop(i)
+                self.brincando.remove(criança)
                 return
         print(f"fail: {nome} nao esta no pula-pula")
 

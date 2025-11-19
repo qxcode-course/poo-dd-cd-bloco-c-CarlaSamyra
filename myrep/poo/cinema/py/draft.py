@@ -20,6 +20,7 @@ class Cliente:
 
 class Theater:
     def __init__ (self, capacidade: int):
+        self.capacidade = capacidade
         self.seats: list[Cliente | None] = []
         for i in range (capacidade):
             self.seats.append(None)
@@ -29,13 +30,36 @@ class Theater:
             return "[]"
         capacidade = " ".join(["-" if x is None else str(x) for x in self.seats])
         return f"[{capacidade}]"
-
     
+    def verifyIndex (self, index: int):
+        if index < 0 or index >= len(self.seats):
+            return False
+        return True
+    
+    def search (self, nome: str):
+        for i, cliente in enumerate (self.seats):
+            if cliente != None and cliente.get_id() == nome: 
+                return i
+        return -1
+
     def reserve (self, cliente: Cliente, index: int):
+        if self.verifyIndex(index) is not True:
+            print("fail: cadeira nao existe")
+            return False
+        if self.search(cliente.get_id()) != -1:
+            print ("fail: cliente ja esta no cinema")
+            return False
         if self.seats[index] != None:
             print("fail: cadeira ja esta ocupada")
+            return False
+        self.seats[index] = cliente 
+
+    def cancel (self, id: str):
+        index = self.search(id)
+        if index == -1:
+            print ("fail: cliente nao esta no cinema")
             return
-        self.seats.append(cliente)
+        self.seats[index] = None
     
 def main():
     sala = Theater(0)
@@ -53,8 +77,11 @@ def main():
             id = args[1]
             telefone = int(args[2])
             cliente = Cliente(id, telefone)
-            index = args[3]
+            index = int(args[3])
             sala.reserve(cliente, index)
+        elif args[0] == "cancel":
+            id = args[1]
+            sala.cancel(id)
         else:
             print("fail: comando inválido")
 
