@@ -2,8 +2,253 @@
     "patches": [
         {
             "label": "2025-11-11_14-07-15",
-            "content": "",
+            "content": "@@ -1,191 +0,0 @@\n-class Grafite:%0A    def __init__ (self, thikness: float, hardness: str, size: int):%0A        self.__size = size%0A        self.__hardness = hardness%0A        self.__thikness = thikness%0A    %0A%0A%0A    \n",
             "lines": "0"
+        },
+        {
+            "label": "2025-11-19_01-05-44",
+            "content": "@@ -182,87 +182,8 @@\n    %0A\n-    def __str__ (self):%0A        return f%22%5B%7Bself.__thikness%7D:%7Bself.__hardness%7D%5D%22\n %0A%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-19_08-04-34",
+            "content": "@@ -259,639 +259,10 @@\n ess%7D\n-:%7Bself.__size%7D%5D%22%0A    %0A%0Aclass Pencil:%0A    def __init__ (self, thikness: float, barrel: int):%0A        self.__thikness = thikness%0A        self.__tip = None %0A        self.__barrel = %5B%5D%0A    %0A    def __str__ (self):%0A        return f%22calibre: %7Bself.__thikness%7D, bico: %7Bself.__tip%7D, tambor: %7Bself.__barrel%7D%22%0A%0Adef main():%0A    lapiseira = Pencil(0, 0)%0A    while True:%0A        line = input()%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        print (%22$%22 + line)   %0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(lapiseira)%0A        else: %0A            print(%22fail: comando inv%C3%A1lido%22)%0Amain()     \n+%5D%22\n %0A%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-11-19_10-13-07",
+            "content": "@@ -558,84 +558,8 @@\n el%7D%22\n-%0A    %0A    def insert (self, amount: float):%0A        self.__thikness = amount\n %0A%0Ade\n@@ -820,113 +820,8 @@\n ra)%0A\n-        elif args%5B0%5D == %22init%22:%0A            amount = float(args%5B1%5D)%0A            lapiseira.insert(amount)%0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-11-19_10-16-36",
+            "content": "@@ -403,18 +403,20 @@\n __tip = \n-%5B%5D\n+None\n  %0A      \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-11-19_10-16-55",
+            "content": "@@ -435,12 +435,10 @@\n l = \n-None\n+%5B%5D\n %0A   \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-11-19_10-17-04",
+            "content": "@@ -469,141 +469,8 @@\n f):%0A\n-        if self.__barrel == None:%0A            return f%22calibre: %7Bself.__thikness%7D, bico: %7Bself.__tip%7D, tambor: %3C%3E%22%0A        else:%0A    \n     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-11-19_10-19-03",
+            "content": "@@ -431,18 +431,20 @@\n arrel = \n-%5B%5D\n+None\n %0A    %0A  \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-11-19_10-21-06",
+            "content": "@@ -431,20 +431,18 @@\n arrel = \n-None\n+%5B%5D\n %0A    %0A  \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-11-19_10-21-28",
+            "content": "@@ -701,28 +701,22 @@\n     def \n-set_thikness\n+insert\n  (self, \n@@ -1119,20 +1119,14 @@\n ira.\n-set_thikness\n+insert\n (amo\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-11-19_10-22-35",
+            "content": "@@ -775,163 +775,8 @@\n nt%0A%0A\n-    def insert (self, calibre: float, dureza: str, tamanho: int):%0A        if calibre != self.__thikness:%0A            print (%22fail: calibre incompativel%22)%0A%0A\n def \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-11-19_10-24-45",
+            "content": "@@ -1301,200 +1301,8 @@\n nt)%0A\n-        elif args%5B0%5D == %22insert%22:%0A            calibre = float(args%5B1%5D)%0A            dureza = args%5B2%5D%0A            tamanho = float(args%5B3%5D)%0A            lapiseira.insert(calibre, dureza, tamanho)%0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-11-19_10-27-06",
+            "content": "@@ -922,9 +922,9 @@\n mpat\n-%C3%AD\n+i\n vel%22\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-11-19_10-27-18",
+            "content": "@@ -431,18 +431,20 @@\n arrel = \n-%5B%5D\n+None\n %0A    %0A  \n@@ -924,35 +924,16 @@\n at%C3%ADvel%22)\n-%0A            return\n %0A%0Adef ma\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-11-19_10-29-29",
+            "content": "@@ -491,18 +491,20 @@\n rrel == \n-%5B%5D\n+None\n :%0A      \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-11-19_10-29-43",
+            "content": "@@ -837,57 +837,8 @@\n t):%0A\n-        self.__barrel = calibre, dureza, tamanho%0A\n     \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-11-19_10-30-20",
+            "content": "@@ -277,16 +277,17 @@\n %5D%22%0A    %0A\n+%0A\n class Pe\n@@ -432,23 +432,8 @@\n rrel\n-: list%5BGrafite%5D\n  = %5B\n@@ -667,17 +667,16 @@\n tambor: \n-%3C\n %7Bself.__\n@@ -682,17 +682,16 @@\n _barrel%7D\n-%3E\n %22%0A    %0A \n@@ -825,32 +825,81 @@\n  tamanho: int):%0A\n+        self.__barrel = calibre, dureza, tamanho%0A\n         if calib\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-19_10-36-51",
+            "content": "@@ -959,52 +959,8 @@\n turn\n- False%0A        self.__barrel.append(Grafite)\n %0A%0Ade\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-11-19_10-39-07",
+            "content": "@@ -995,32 +995,15 @@\n end(\n-calibre, dureza, tamanho\n+Grafite\n )%0A%0Ad\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-11-19_10-39-26",
+            "content": "@@ -998,16 +998,33 @@\n (calibre\n+, dureza, tamanho\n )%0A%0Adef m\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-11-19_10-39-42",
+            "content": "@@ -853,60 +853,8 @@\n t):%0A\n-        grafite = Grafite(calibre, dureza, tamanho)%0A\n     \n@@ -995,14 +995,14 @@\n end(\n-grafit\n+calibr\n e)%0A%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-11-19_10-40-32",
+            "content": "@@ -1036,22 +1036,22 @@\n _barrel.\n-insert\n+append\n (grafite\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-19_10-41-19",
+            "content": "@@ -1040,14 +1040,14 @@\n rel.\n-append\n+insert\n (gra\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-19_10-41-26",
+            "content": "@@ -1026,99 +1026,36 @@\n     \n-if calibre == self.__thikness:%0A            self.__barrel = Grafite(calibre, dureza, tamanho\n+self.__barrel.append(grafite\n )%0A%0Ad\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-19_10-43-41",
+            "content": "@@ -1609,18 +1609,20 @@\n manho = \n-in\n+floa\n t(args%5B3\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-11-19_10-43-58",
+            "content": "@@ -1082,18 +1082,8 @@\n rrel\n-.insert(0)\n  = G\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-11-19_10-47-36",
+            "content": "@@ -1091,17 +1091,8 @@\n rt(0\n-, Grafite\n ) = \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-11-19_10-47-51",
+            "content": "@@ -1078,16 +1078,35 @@\n __barrel\n+.insert(0, Grafite)\n  = Grafi\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-11-19_10-48-16",
+            "content": "@@ -1118,59 +1118,8 @@\n nho)\n-%0A            self.__barrel.insert(0, self.__barrel)\n %0A%0Ade\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-11-19_10-49-44",
+            "content": "@@ -427,16 +427,31 @@\n __barrel\n+: list%5BGrafite%5D\n  = %5B%5D%0A  \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-19_10-50-55",
+            "content": "@@ -1136,23 +1136,29 @@\n sert(0, \n-grafite\n+self.__barrel\n )%0A%0Adef m\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-19_10-51-56",
+            "content": "@@ -431,23 +431,8 @@\n rrel\n-: list%5BGrafite%5D\n  = %5B\n@@ -1130,15 +1130,18 @@\n rel.\n-append(\n+insert(0, \n graf\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-19_10-52-26",
+            "content": "@@ -1114,16 +1114,58 @@\n tamanho)\n+%0A            self.__barrel.append(grafite)\n %0A%0Adef ma\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-19_10-55-40",
+            "content": "@@ -1082,23 +1082,43 @@\n rrel\n-.append(grafite\n+ = Grafite(calibre, dureza, tamanho\n )%0A%0Ad\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-11-19_10-58-24",
+            "content": "@@ -1098,32 +1098,8 @@\n ite)\n-%0A            return True\n %0A%0Ade\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-11-19_11-02-00",
+            "content": "@@ -406,12 +406,11 @@\n p = \n-None\n+%5B%5D \n %0A   \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-19_11-02-59",
+            "content": "@@ -490,118 +490,131 @@\n     \n-tip_str = str(self.__tip) if self.__tip else %22%5B%5D%22%0A        barrel_str = %22%22.join(str(g) for g in self.__barrel)%0A\n+if self.__barrel == %5B%5D:%0A            return f%22calibre: %7Bself.__thikness%7D, bico: %7Bself.__tip%7D, tambor: %3C%3E%22%0A        else:%0A    \n     \n@@ -665,15 +665,18 @@\n o: %7B\n-tip_str\n+self.__tip\n %7D, t\n@@ -688,18 +688,21 @@\n : %3C%7B\n+self.__\n barrel\n-_str\n %7D%3E%22%0A\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-19_11-03-30",
+            "content": "@@ -573,16 +573,16 @@\n str(\n-i\n+g\n ) for \n-i\n+g\n  in \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-11-19_11-08-28",
+            "content": "@@ -1105,195 +1105,8 @@\n rue%0A\n-        %0A    def pull (self):%0A        if self.__tip != None:%0A            print(%22fail: ja existe grafite no bico%22)%0A            return%0A        else:%0A            self.__tip = self.__barrel%0A%0A\n %0Adef\n@@ -1667,69 +1667,8 @@\n ho)%0A\n-        elif args%5B0%5D == %22pull%22:%0A            lapiseira.pull()%0A\n     \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-11-19_11-10-39",
+            "content": "@@ -1264,91 +1264,34 @@\n     \n-grafite = self.__barrel.pop()            %0A            self.__tip.insert(0, grafite)\n+self.__tip = self.__barrel\n %0A%0A%0Ad\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-11-19_11-12-22",
+            "content": "@@ -1328,18 +1328,26 @@\n _tip\n- =\n+.insert(0,\n  grafite\n %0A%0A%0Ad\n@@ -1342,16 +1342,17 @@\n  grafite\n+)\n %0A%0A%0Adef m\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-19_11-13-00",
+            "content": "@@ -1288,17 +1288,16 @@\n rel.pop(\n-0\n )       \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-19_11-13-21",
+            "content": "@@ -1341,57 +1341,8 @@\n te%0A%0A\n-    def remove (self):%0A        self.__tip = None%0A\n %0Adef\n@@ -1964,73 +1964,8 @@\n l()%0A\n-        elif args%5B0%5D == %22remove%22:%0A            lapiseira.remove()%0A\n     \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-19_11-14-52",
+            "content": "@@ -281,647 +281,8 @@\n    %0A\n-    def get_thikness (self):%0A        return self.__thikness%0A    %0A    def get_hardness (self):%0A        return self.__hardness%0A    %0A    def get_size (self):%0A        return self.__size%0A    %0A    def set_size (self, tamanho: int):%0A        self.__size = tamanho%0A%0A    def usagePerSheet (self):%0A        if self.__hardness == %22HB%22:%0A            self.__size -= 1%0A            return 1%0A        if self.__hardness == %222B%22:%0A            self.__size -= 2%0A            return 2 %0A        if self.__hardness == %224B%22:%0A            self.__size -= 4%0A            return 4 %0A        if self.__hardness == %226B%22:%0A            self.__size -= 6%0A            return 6 %0A    %0A\n clas\n@@ -1391,120 +1391,8 @@\n ne%0A%0A\n-    def writePage (self):%0A        if self.__tip == None:%0A            print(%22fail: nao existe grafite no bico%22)%0A%0A\n def \n@@ -2039,24 +2039,24 @@\n = %22remove%22:%0A\n+\n             \n@@ -2078,75 +2078,8 @@\n e()%0A\n-        elif args%5B0%5D == %22write%22:%0A            lapiseira.writePage()%0A\n     \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-19_11-27-51",
+            "content": "@@ -2140,160 +2140,8 @@\n co%22)\n-%0A            return%0A        %0A        tamanho = self.__tip.get_size()%0A%0A        gasto = self.__tip.usagePerSheet()%0A        tamanhoUsado = tamanho - gasto \n %0A%0Ade\n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-11-19_11-30-58",
+            "content": "@@ -2294,139 +2294,8 @@\n o %0A%0A\n-        if tamanhoUsado %3C 10: %0A            self.__tip.set_size(10)%0A            print(%22fail: folha incompleta%22)%0A            return%0A%0A\n def \n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-11-19_11-34-05",
+            "content": "@@ -2210,100 +2210,8 @@\n ()%0A%0A\n-        if tamanho == 10: %0A            print (%22fail: folha incompleta%22)%0A            return%0A%0A\n     \n",
+            "lines": "113"
+        },
+        {
+            "label": "2025-11-19_11-35-11",
+            "content": "@@ -2263,28 +2263,24 @@\n il: \n-tamanho insuficiente\n+folha incompleta\n %22)%0A \n",
+            "lines": "117"
+        },
+        {
+            "label": "2025-11-19_11-35-48",
+            "content": "@@ -3039,9 +3039,8 @@\n     \n-#\n lapi\n",
+            "lines": "117"
+        },
+        {
+            "label": "2025-11-19_11-36-40",
+            "content": "class Grafite:\n    def __init__ (self, thikness: float, hardness: str, size: int):\n        self.__size = size\n        self.__hardness = hardness\n        self.__thikness = thikness\n    \n    def __str__ (self):\n        return f\"[{self.__thikness}:{self.__hardness}:{self.__size}]\"\n    \n    def get_thikness (self):\n        return self.__thikness\n    \n    def get_hardness (self):\n        return self.__hardness\n    \n    def get_size (self):\n        return self.__size\n    \n    def set_size (self, tamanho: int):\n        self.__size = tamanho\n\n    def usagePerSheet (self):\n        if self.__hardness == \"HB\":\n            self.__size -= 1\n            return 1\n        if self.__hardness == \"2B\":\n            self.__size -= 2\n            return 2 \n        if self.__hardness == \"4B\":\n            self.__size -= 4\n            return 4 \n        if self.__hardness == \"6B\":\n            self.__size -= 6\n            return 6 \n    \nclass Pencil:\n    def __init__ (self, thikness: float, barrel: int):\n        self.__thikness = thikness\n        self.__tip = None\n        self.__barrel: list[Grafite] = []\n    \n    def __str__ (self):\n        tip_str = str(self.__tip) if self.__tip else \"[]\"\n        barrel_str = \"\".join(str(i) for i in self.__barrel)\n        return f\"calibre: {self.__thikness}, bico: {tip_str}, tambor: <{barrel_str}>\"\n    \n    def set_thikness (self, amount: float):\n        self.__thikness = amount\n\n    def insert (self, calibre: float, dureza: str, tamanho: int):\n        grafite = Grafite(calibre, dureza, tamanho)\n        if calibre != self.__thikness:\n            print (\"fail: calibre incompat\u00edvel\")\n            return False\n        if calibre == self.__thikness:\n            self.__barrel.append(grafite)\n            return True\n        \n    def pull (self):\n        if self.__tip != None:\n            print(\"fail: ja existe grafite no bico\")\n            return\n        else:\n            grafite = self.__barrel.pop(0)            \n            self.__tip = grafite\n\n    def remove (self):\n        self.__tip = None\n\n    def writePage (self):\n        if self.__tip == None:\n            print(\"fail: nao existe grafite no bico\")\n            return\n        \n        tamanho = self.__tip.get_size()\n\n        if tamanho == 10: \n            print (\"fail: tamanho insuficiente\")\n            return\n\n        gasto = self.__tip.usagePerSheet()\n        tamanhoUsado = tamanho - gasto \n\n        if tamanhoUsado < 10: \n            self.__tip.set_size(10)\n            print(\"fail: folha incompleta\")\n            return\n\ndef main():\n    lapiseira = Pencil(0, 0)\n    while True:\n        line = input()\n        args: list[str] = line.split(\" \")\n        print (\"$\" + line)   \n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(lapiseira)\n        elif args[0] == \"init\":\n            amount = float(args[1])\n            lapiseira.set_thikness(amount)\n        elif args[0] == \"insert\":\n            calibre = float(args[1])\n            dureza = args[2]\n            tamanho = int(args[3])\n            #lapiseira.insert(calibre, dureza, tamanho)\n        elif args[0] == \"pull\":\n            lapiseira.pull()\n        elif args[0] == \"remove\":\n            lapiseira.remove()\n        elif args[0] == \"write\":\n            lapiseira.writePage()\n        else: \n            print(\"fail: comando inv\u00e1lido\")\nmain()     \n\n    ",
+            "lines": "117"
         }
     ]
 }
